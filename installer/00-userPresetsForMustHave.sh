@@ -12,15 +12,15 @@ do
 		continue
 	fi
 	
-	aFile=$deployerRoot$sourceUserDir$anItem
+	aFile=$deployerRoot$sourceUserDir/$anItem
 	if [ -d $aFile ]
 	then
-		echo dir: aFile
+		echo dir: $aFile
 	elif [ -f $aFile ]
 	then
-		echo fle: aFile
+		echo fle: $aFile
 	else
-		echo ERROR: aFile
+		echo ERROR: $aFile
 	fi
 #	cp -R $deployerRoot$sourceUserDir$anItem ~/
 done
