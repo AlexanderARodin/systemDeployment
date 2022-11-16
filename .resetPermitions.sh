@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-echo Ok-k-k!!
 
+installerDir="./installer"
+
+echo "rise for <$installerDir> EXECUTABLE flag"
+chmod +x $installerDir/*
+echo
