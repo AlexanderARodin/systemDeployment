@@ -6,7 +6,7 @@ sourceUserDir=/resources/userSkel
 itemsList=$(ls -a $deployerRoot$sourceUserDir)
 for anItem in $itemsList
 do
-	if [ anItem = "." || anItem = ".." ]
+	if [ $anItem = "." || $anItem = ".." ]
 	then
 		echo x
 		continue
