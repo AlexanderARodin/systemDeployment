@@ -5,7 +5,9 @@ installerDir="./installer"
 echo "rise for <$installerDir> EXECUTABLE flag"
 chmod +x $installerDir/*
 
-echo "basic config for Git"
-git config --global user.name "$1"
-git config --global user.email "$1@inbox.ru"
+userName="$1"
+userEmail="$1@inbox.ru"
+echo "basic config for Git: $userName <$userEmail>"
+git config --global user.name $userName
+git config --global user.email $userEmail
 echo
