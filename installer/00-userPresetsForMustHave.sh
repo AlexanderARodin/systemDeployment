@@ -24,7 +24,7 @@ do
 		echo ERROR: $aFile
 		continue
 	fi
-	cp -R $deployerRoot$sourceUserDir$anItem /etc/skel/
+	cp -R $aFile /etc/skel/
 done
 
 echo 
