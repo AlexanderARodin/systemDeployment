@@ -7,7 +7,8 @@ git config --global user.name $userName
 git config --global user.email $userEmail
 echo
 
-installerDir="./installer"
-echo "rise for <$installerDir> EXECUTABLE flag"
-chmod +x $installerDir/*
+deployerRoot=$(dirname $0)
+installerPath="/installer"
+echo "rise for <$installerPath> EXECUTABLE flag"
+chmod +x $deployerRoot$installerPath/*
 
