@@ -12,3 +12,7 @@ installerPath="/installer"
 echo "rise EXECUTABLE flag for <.$installerPath/*>"
 chmod +x $deployerRoot$installerPath/*
 
+echo 
+echo ________________
+echo $0
+echo 
