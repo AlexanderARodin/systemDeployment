@@ -4,12 +4,6 @@ echo update & install packets
 apt update
 apt install -y vim zsh tmux mc make
 
-
-echo add presets to user directory
-deployerRoot=$(dirname $0)
-sourceUserDir=/resources/userDir
-cp -R $deployerRoot$sourceUserDir ~/
-
 echo 
 echo ________________
 echo $0
