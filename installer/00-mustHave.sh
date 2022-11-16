@@ -7,7 +7,7 @@ apt install -y vim zsh tmux mc make
 
 echo add presets to user directory
 deployerRoot=$(dirname $0)
-sourceUserDir=/resource/userDir/
+sourceUserDir=/resources/userDir
 cp -R $deployerRoot$sourceUserDir ~/
 
 echo 
