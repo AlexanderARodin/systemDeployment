@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
 apt update
-apt install vim
-apt install mc
-apt install zsh
-apt install tmux
-apt install make
+apt install vim zsh tmux mc make
 
 echo 
-echo __________
+echo ________________
 echo $0
 echo 
