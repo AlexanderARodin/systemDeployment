@@ -3,7 +3,7 @@
 echo add presets to user directory
 deployerRoot=$(dirname $(dirname $0))
 sourceUserDir=/resources/userDir/
-itemsList= .zshrc .vimrc
+itemsList=".zshrc" ".vimrc"
 for anItem in $itemsList
 do
 	cp -R $deployerRoot$sourceUserDir$anItem ~/
