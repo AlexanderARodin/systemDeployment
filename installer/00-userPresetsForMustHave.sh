@@ -3,12 +3,13 @@
 echo add presets to user directory
 deployerRoot=$(dirname $(dirname $0))
 sourceUserDir=/resources/userSkel
+
 itemsList=$(ls -a $deployerRoot$sourceUserDir)
+
 for anItem in $itemsList
 do
 	if [ $anItem = "." ] || [ $anItem = ".." ]
 	then
-		echo x
 		continue
 	fi
 	
@@ -21,8 +22,9 @@ do
 		echo fle: $aFile
 	else
 		echo ERROR: $aFile
+		continue
 	fi
-#	cp -R $deployerRoot$sourceUserDir$anItem ~/
+	cp -R $deployerRoot$sourceUserDir$anItem /etc/skel/
 done
 
 echo 
