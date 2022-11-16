@@ -2,7 +2,7 @@
 
 echo add presets to user directory
 deployerRoot=$(dirname $(dirname $0))
-sourceUserDir=/resources/userDir/
+sourceUserDir=/resources/userDir/*
 cp -R $deployerRoot$sourceUserDir ~/
 
 echo 
