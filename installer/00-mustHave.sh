@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 apt update
-apt install vim zsh tmux mc make
+apt install -y vim zsh tmux mc make
 
 echo 
 echo ________________
