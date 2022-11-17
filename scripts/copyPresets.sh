@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+. ./.lib.sh
+
+test "test123"
+
+exit 0
+
 echo add presets to user directory
 deployerRoot=$(dirname $(dirname $0))
 sourceUserDir=/resources/userSkel
