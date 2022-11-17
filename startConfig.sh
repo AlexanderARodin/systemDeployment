@@ -20,7 +20,7 @@ echo ________________
 echo $0
 echo 
 
-~/systemDeployment/scripts/copyPresets.sh
-~/systemDeployment/scripts/installBaseTools.sh
+$deployerRoot/scripts/copyPresets.sh
+$deployerRoot/scripts/installBaseTools.sh
 
 echo *****************************************************************
