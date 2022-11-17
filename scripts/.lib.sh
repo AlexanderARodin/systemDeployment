@@ -1,6 +1,3 @@
-function test {
-	echo test of: $1
-}
 
 function raaCopy {
 	resourcesDir=$(dirname $(dirname $0))/resources/$1
