@@ -14,10 +14,10 @@ function raaCopy {
 		aFile=$resourcesDir/$anItem
 		if [ -d $aFile ]
 		then
-			echo dir: $aFile
+			echo --->  dir: $aFile
 		elif [ -f $aFile ]
 		then
-			echo fle: $aFile
+			echo ---> file: $aFile
 		else
 			echo ERROR: $aFile
 			continue
