@@ -21,3 +21,6 @@ echo $0
 echo 
 
 ~/systemDeployment/scripts/copyPresets.sh
+
+
+echo *****************************************************************
