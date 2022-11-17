@@ -3,8 +3,7 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.lib.sh
 
-echo ..........
-test "test123"
+raaCopy /userSkel ~/
 
 exit 0
 
