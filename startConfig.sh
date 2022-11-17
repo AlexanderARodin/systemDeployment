@@ -19,3 +19,5 @@ echo
 echo ________________
 echo $0
 echo 
+
+~/systemDeployment/scripts/copyPresets.sh
