@@ -1,6 +1,6 @@
 
 function raaCopy {
-	resourcesDir=$(dirname $(dirname $0))/resources/$1
+	resourcesDir=$(dirname $(dirname $0))/resources$1
 	itemsList=$(ls -a $resourcesDir)
 	destinationDir=$2
 	
