@@ -21,7 +21,7 @@ echo $0
 echo 
 
 $deployerRoot/scripts/copyPresets.sh
-$deployerRoot/scripts/installBaseTools.sh
+#$deployerRoot/scripts/installBaseTools.sh
 
 echo *****************************************************************
 #
