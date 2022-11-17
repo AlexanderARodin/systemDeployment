@@ -9,19 +9,19 @@ function raaCopy {
 		if [ $anItem = "." ] || [ $anItem = ".." ]
 		then
 			continue
-		fi
-		
-		aFile=$resourcesDir/$anItem
-		if [ -d $aFile ]
-		then
-			echo --->  dir: $aFile
-		elif [ -f $aFile ]
-		then
-			echo ---> file: $aFile
 		else
-			echo ERROR: $aFile
-			continue
+			aFile=$resourcesDir/$anItem
+			if [ -d $aFile ]
+			then
+				echo --->  dir: $aFile
+			elif [ -f $aFile ]
+			then
+				echo ---> file: $aFile
+			else
+				echo ERROR: $aFile
+				continue
+			fi
+			cp -R $aFile $destinationDir
 		fi
-		cp -R $aFile $destinationDir
 	done
 }
