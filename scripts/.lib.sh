@@ -2,7 +2,7 @@ function test {
 	echo test of: $1
 }
 
-fucntion raaCopy {
+function raaCopy {
 	resourcesDir=$(dirname $(dirname $0))/resources/$1
 	itemsList=$(ls -a $resourcesDir)
 	destinationDir=$2
