@@ -21,6 +21,6 @@ echo $0
 echo 
 
 ~/systemDeployment/scripts/copyPresets.sh
-
+~/systemDeployment/scripts/installBaseTools.sh
 
 echo *****************************************************************
