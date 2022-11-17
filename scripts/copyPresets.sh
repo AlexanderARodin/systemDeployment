@@ -2,6 +2,7 @@
 
 . ./.lib.sh
 
+echo ..........
 test "test123"
 
 exit 0
