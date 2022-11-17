@@ -8,7 +8,7 @@ git config --global user.email $userEmail
 echo
 
 deployerRoot=$(dirname $0)
-for aFolder in /installer /utils
+for aFolder in /scripts
 do
 	dirPath=$deployerRoot$aFolder
 	echo "rise EXECUTABLE flag for <$dirPath/*.sh>"
