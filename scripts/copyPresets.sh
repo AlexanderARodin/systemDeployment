@@ -3,7 +3,7 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.lib.sh
 
-raaCopy /userSkel ~/
+raaCopy /userSkel /etc/skel/
 
 exit 0
 
