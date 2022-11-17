@@ -8,9 +8,12 @@ git config --global user.email $userEmail
 echo
 
 deployerRoot=$(dirname $0)
-installerPath="/installer"
-echo "rise EXECUTABLE flag for <.$installerPath/*.sh>"
-chmod +x $deployerRoot$installerPath/*.sh
+for aFolder in /installer /utils
+do
+	dirPath=$deployerRoot$aFolder
+	echo "rise EXECUTABLE flag for <$dirPath/*.sh>"
+	chmod +x $dirPath/*.sh
+done
 
 echo 
 echo ________________
