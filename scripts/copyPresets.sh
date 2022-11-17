@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-. ./.lib.sh
+. ./lib.sh
 
 echo ..........
 test "test123"
