@@ -9,8 +9,8 @@ echo
 
 deployerRoot=$(dirname $0)
 installerPath="/installer"
-echo "rise EXECUTABLE flag for <.$installerPath/*>"
-chmod +x $deployerRoot$installerPath/*
+echo "rise EXECUTABLE flag for <.$installerPath/*.sh>"
+chmod +x $deployerRoot$installerPath/*.sh
 
 echo 
 echo ________________
