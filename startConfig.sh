@@ -17,11 +17,11 @@ done
 
 echo 
 echo ________________
-echo $0
+echo end of: $0
 echo 
 
 $deployerRoot/scripts/copyPresets.sh
 #$deployerRoot/scripts/installBaseTools.sh
 
-echo *****************************************************************
+echo -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
 #
