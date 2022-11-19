@@ -21,7 +21,7 @@ function raaCopy {
 				echo ERROR: $aFile
 				continue
 			fi
-			cp -R $aFile $destinationDir
+			cp -R $aFile $destinationDir/
 		fi
 	done
 }
