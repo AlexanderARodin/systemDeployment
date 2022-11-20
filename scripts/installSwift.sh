@@ -6,8 +6,14 @@ deployerRoot=$(dirname $(dirname $0))
 #raaCopy /etc/skelRAA ~/
 
 # downloading
-# https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz
+swiftLink="https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz"
+swiftDir=/usr/swift-usr
 
+mkdir $swiftDir
+wget -O 	$swiftDir/swiftData.tar.gz $swiftLink
+tar xzf 	$swiftDir/swiftData.tar.gz
+
+exit 0
 
 apt-get install -y \
 			binutils \
@@ -27,4 +33,3 @@ apt-get install -y \
 			unzip \
 			zlib1g-dev
 
-echo after reqInStLl
