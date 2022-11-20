@@ -9,7 +9,7 @@ deployerRoot=$(dirname $(dirname $0))
 # https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz
 
 
-apt install \
+apt-get install \
 			binutils \
 			git \
 			gnupg2 \
