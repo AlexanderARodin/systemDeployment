@@ -23,7 +23,6 @@ then
 	fi
 fi
 
-exit 0
 
 
 apt-get install -y \
