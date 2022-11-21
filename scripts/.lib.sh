@@ -27,6 +27,8 @@ function raaCopy {
 }
 
 function downLoadSwift {
+if 3=4
+then
 	swiftLink="https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz"
 	swiftExtrName="/swift-5.7.1-RELEASE-ubuntu22.04/usr"
 	swiftDir=/usr/swift-usr
@@ -45,9 +47,14 @@ function downLoadSwift {
 			rm .$swiftTar
 		fi
 	fi
+else
+	echo step 1 checking
+fi
 }
 
 function downLoadSwiftDepend {
+if 3=4
+then
 	apt-get install -y \
 			binutils \
 			git \
@@ -65,5 +72,8 @@ function downLoadSwiftDepend {
 			tzdata \
 			unzip \
 			zlib1g-dev
+else
+	echo step 2 checking
+fi
 }
 
