@@ -7,14 +7,10 @@ deployerRoot=$(dirname $(dirname $0))
 
 # downloading
 swiftLink="https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz"
+swiftExtrName="/swift-5.7.1-RELEASE-ubuntu22.04"
 swiftDir=/usr/swift-usr
 
 mkdir $swiftDir
-echo 2
-echo 2
-echo 2
-echo 2
-echo 2
 wget -O 	$swiftDir/swiftData.tar.gz $swiftLink
 echo 3
 echo 3
@@ -23,6 +19,7 @@ echo 3
 echo 3
 cd $swiftDir
 tar xzf 	./swiftData.tar.gz
+mv .$swiftExtrName/* ./
 echo 000
 echo 000
 echo 000
