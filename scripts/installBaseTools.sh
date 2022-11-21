@@ -2,7 +2,7 @@
 
 echo update & install packets
 apt update
-apt install -y vim zsh tmux mc make
+apt install -y vim zsh tmux mc make tree
 
 echo 
 echo ________________
