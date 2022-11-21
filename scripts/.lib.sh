@@ -33,7 +33,7 @@ function downLoadSwift {
 	swiftTar=/swiftData.tar.gz
 	
 	mkdir $swiftDir
-	wget -O 	$swiftDir$swiftTar $swiftLink
+	wget -O $swiftDir$swiftTar $swiftLink
 	
 	cd $swiftDir
 	tar xzf 	.$swiftTar
