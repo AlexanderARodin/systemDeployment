@@ -56,7 +56,7 @@ function downLoadSwiftDepend {
 			libcurl4-openssl-dev \
 			libedit2 \
 			libgcc-9-dev \
-			libpython3.8 \
+			libpython3.10 \
 			libsqlite3-0 \
 			libstdc++-9-dev \
 			libxml2-dev \
