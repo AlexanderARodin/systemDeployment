@@ -3,35 +3,28 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.lib.sh
 
-#raaCopy /etc/skelRAA ~/
-
 # downloading
 swiftLink="https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1-RELEASE/swift-5.7.1-RELEASE-ubuntu22.04.tar.gz"
 swiftExtrName="/swift-5.7.1-RELEASE-ubuntu22.04/usr"
 swiftDir=/usr/swift-usr
+swiftTar=/swiftData.tar.gz
 
 mkdir $swiftDir
-wget -O 	$swiftDir/swiftData.tar.gz $swiftLink
-echo 3
-echo 3
-echo 3
-echo 3
-echo 3
+wget -O 	$swiftDir$swiftTar $swiftLink
+
 cd $swiftDir
-tar xzf 	./swiftData.tar.gz
-echo 000
+tar xzf 	.$swiftTar
 mv .$swiftExtrName/* ./
-echo 000
 if rm -d .$swiftExtrName
 then
 	if rm -d .$(dirname $swiftExtrName)
 	then
-		echo OKKKKKKKKKKKKKKKKKKK
+		rm .$swiftTar
 	fi
 fi
-echo 000
 
 exit 0
+
 
 apt-get install -y \
 			binutils \
