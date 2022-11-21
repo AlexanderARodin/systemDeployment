@@ -22,9 +22,9 @@ tar xzf 	./swiftData.tar.gz
 echo 000
 mv .$swiftExtrName/* ./
 echo 000
-if rm .$swiftExtrName
+if rm -d .$swiftExtrName
 then
-	if rm .$(dirname $swiftExtrName)
+	if rm -d .$(dirname $swiftExtrName)
 	then
 		echo OKKKKKKKKKKKKKKKKKKK
 	fi
