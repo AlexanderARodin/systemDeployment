@@ -18,9 +18,3 @@ echo ________________
 echo end of: $0
 echo 
 
-#$deployerRoot/scripts/globalUserPreset.sh
-#$deployerRoot/scripts/installBaseTools.sh
-#$deployerRoot/scripts/installSwift.sh
-
-echo -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
-#
