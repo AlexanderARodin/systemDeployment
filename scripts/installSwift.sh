@@ -3,6 +3,14 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.lib.sh
 
-downLoadSwift
+if $1 != "libs"
+then
+	echo SWIIIIIIIIF
+#	downLoadSwift
+fi
 
-downLoadSwiftDepend
+if $1 != "swift"
+then
+	echo LIIIIIIIIIiiiiiibs
+#	downLoadSwiftDepend
+fi
