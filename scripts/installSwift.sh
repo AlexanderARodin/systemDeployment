@@ -10,18 +10,18 @@ swiftLink="https://download.swift.org/swift-5.7.1-release/ubuntu2204/swift-5.7.1
 swiftDir=/usr/swift-usr
 
 mkdir $swiftDir
+echo 2
+echo 2
+echo 2
+echo 2
+echo 2
+wget -O 	$swiftDir/swiftData.tar.gz $swiftLink
+echo 3
+echo 3
+echo 3
+echo 3
+echo 3
 cd $swiftDir
-echo 2
-echo 2
-echo 2
-echo 2
-echo 2
-wget -O 	./swiftData.tar.gz $swiftLink
-echo 3
-echo 3
-echo 3
-echo 3
-echo 3
 tar xzf 	./swiftData.tar.gz
 echo 000
 echo 000
