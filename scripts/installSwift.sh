@@ -5,12 +5,10 @@ deployerRoot=$(dirname $(dirname $0))
 
 if [ "$1" != "libs" ]
 then
-	echo SWIIIIIIIIF
-#	downLoadSwift
+	downLoadSwift
 fi
 
 if [ "$1" != "swift" ]
 then
-	echo LIIIIIIIIIiiiiiibs
-#	downLoadSwiftDepend
+	downLoadSwiftDepend
 fi
