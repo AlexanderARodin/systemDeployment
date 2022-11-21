@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# configure Git
 userName="$1"
 userEmail="$1@inbox.ru"
 echo "basic config for Git: $userName <$userEmail>"
@@ -7,13 +8,10 @@ git config --global user.name $userName
 git config --global user.email $userEmail
 echo
 
-deployerRoot=$(dirname $0)
-for aFolder in /scripts
-do
-	dirPath=$deployerRoot$aFolder
-	echo "rise EXECUTABLE flag for <$dirPath/*.sh>"
-	chmod +x $dirPath/*.sh
-done
+deployerScrips=$(dirname $0)/scripts
+echo "rise EXECUTABLE flag for <$deployerScrips/*.sh>"
+chmod +x $deployerScrips/*.sh
+
 
 echo 
 echo ________________
@@ -22,7 +20,7 @@ echo
 
 #$deployerRoot/scripts/globalUserPreset.sh
 #$deployerRoot/scripts/installBaseTools.sh
-$deployerRoot/scripts/installSwift.sh
+#$deployerRoot/scripts/installSwift.sh
 
 echo -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-
 #
