@@ -36,7 +36,7 @@ function downLoadSwift {
 	wget -O $swiftDir$swiftTar $swiftLink
 	
 	cd $swiftDir
-	tar xzf 	.$swiftTar
+	tar xzf .$swiftTar
 	mv .$swiftExtrName/* ./
 	if rm -d .$swiftExtrName
 	then
@@ -45,6 +45,8 @@ function downLoadSwift {
 			rm .$swiftTar
 		fi
 	fi
+	rm -Rd .$swiftExtrName/include/unicode
+	cp -R .$swiftExtrName/* /usr/
 }
 
 function downLoadSwiftDepend {
