@@ -45,8 +45,8 @@ function downLoadSwift {
 			rm .$swiftTar
 		fi
 	fi
-	rm -Rd .$swiftExtrName/include/unicode
-	cp -R .$swiftExtrName/* /usr/
+	rm -Rd .$swiftDir/include/unicode
+	cp -R .$swiftDir/* /usr/
 }
 
 function downLoadSwiftDepend {
