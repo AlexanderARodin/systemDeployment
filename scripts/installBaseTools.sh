@@ -11,7 +11,7 @@ case "$1" in
 		echo 2
 		;;
 	*)
-		echo undef key
+		echo $0 [unknown key]: $1
 		exit 1
 		;;
 esac
