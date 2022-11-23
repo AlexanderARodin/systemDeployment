@@ -1,36 +1,53 @@
 #!/usr/bin/env bash
 
+installLevel=0
+
 case "$1" in
 	min)
-		echo 0
+		installLevel=1
 		;;
 	mid)
-		echo 1
+		installLevel=2
 		;;
 	max)
-		echo 2
+		installLevel=3
 		;;
 	*)
-		echo $0 [unknown key]: $1
+		echo unknown key: $1
 		exit 1
 		;;
 esac
 
+
+packsList=""
+
+if [ $installLevel -le 0 ]
+then
+	echo there no keys
+	exit 1
+fi
+if [ $installLevel -le 1 ]
+then
+	packsList="packsList zsh tmux tree"
+	exit 1
+fi
+if [ $installLevel -le 2 ]
+then
+	packsList="packsList make vim"
+	exit 1
+fi
+if [ $installLevel -le 3 ]
+then
+	packsList="packsList mc"
+	exit 1
+fi
+
+echo $packsList
 exit 0
+
 
 apt update
 
-packsList="zsh tmux tree"
-
-if [ "$1" != "min" ]
-then
-	#
-fi
-
-if [ "$1" != "swift" ]
-then
-	downLoadSwiftDepend
-fi
 
 apt install -y packsList
 vim mc make
