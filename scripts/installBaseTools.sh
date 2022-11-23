@@ -14,6 +14,7 @@ case "$1" in
 		echo undef key
 		exit 1
 		;;
+esac
 
 exit 0
 
