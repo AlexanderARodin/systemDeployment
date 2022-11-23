@@ -26,15 +26,15 @@ then
 	echo there no keys
 	exit 1
 fi
-if [ $installLevel -le 1 ]
+if [ $installLevel -ge 1 ]
 then
 	packsList="$packsList zsh tmux tree"
 fi
-if [ $installLevel -le 2 ]
+if [ $installLevel -ge 2 ]
 then
 	packsList="$packsList make vim"
 fi
-if [ $installLevel -le 3 ]
+if [ $installLevel -ge 3 ]
 then
 	packsList="$packsList mc"
 fi
