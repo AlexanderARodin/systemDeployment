@@ -1,10 +1,19 @@
 #!/usr/bin/env bash
 
 case "$1" in
-"min")	echo 0
-"mid")	echo 1
-"max")	echo 2
-*)			echo undef key; exit 1
+	min)
+		echo 0
+		;;
+	mid)
+		echo 1
+		;;
+	max)
+		echo 2
+		;;
+	*)
+		echo undef key
+		exit 1
+		;;
 
 exit 0
 
