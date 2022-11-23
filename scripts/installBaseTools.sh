@@ -29,17 +29,14 @@ fi
 if [ $installLevel -le 1 ]
 then
 	packsList="packsList zsh tmux tree"
-	exit 1
 fi
 if [ $installLevel -le 2 ]
 then
 	packsList="packsList make vim"
-	exit 1
 fi
 if [ $installLevel -le 3 ]
 then
 	packsList="packsList mc"
-	exit 1
 fi
 
 echo $packsList
