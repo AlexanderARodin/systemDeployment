@@ -39,12 +39,6 @@ then
 	packsList="$packsList mc"
 fi
 
-echo $packsList
-exit 0
-
-
 apt update
+apt install -y $packsList
 
-
-apt install -y packsList
-vim mc make
