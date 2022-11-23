@@ -1,10 +1,26 @@
 #!/usr/bin/env bash
 
-echo update & install packets
-apt update
-apt install -y vim zsh tmux mc make tree
+case "$1" in
+"min")	echo 0
+"mid")	echo 1
+"max")	echo 2
+*)			echo undef key; exit 1
 
-echo 
-echo ________________
-echo $0
-echo 
+exit 0
+
+apt update
+
+packsList="zsh tmux tree"
+
+if [ "$1" != "min" ]
+then
+	#
+fi
+
+if [ "$1" != "swift" ]
+then
+	downLoadSwiftDepend
+fi
+
+apt install -y packsList
+vim mc make
