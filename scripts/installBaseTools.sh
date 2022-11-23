@@ -28,15 +28,15 @@ then
 fi
 if [ $installLevel -le 1 ]
 then
-	packsList="packsList zsh tmux tree"
+	packsList="$packsList zsh tmux tree"
 fi
 if [ $installLevel -le 2 ]
 then
-	packsList="packsList make vim"
+	packsList="$packsList make vim"
 fi
 if [ $installLevel -le 3 ]
 then
-	packsList="packsList mc"
+	packsList="$packsList mc"
 fi
 
 echo $packsList
