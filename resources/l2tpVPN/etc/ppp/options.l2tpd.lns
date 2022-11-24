@@ -1,13 +1,13 @@
 noccp
 auth
-crtscts
+# crtscts
 mtu 1410
 mru 1410
 nodefaultroute
-lock
+# lock
 noproxyarp
 silent
-modem
+# modem
 asyncmap 0
 hide-password
 require-mschap-v2
