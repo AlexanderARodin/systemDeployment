@@ -14,4 +14,5 @@ if [ "$1" = "full" ]
 then
 	apt -y install xl2tpd
 	raaCopy /l2tpVPN/etc/ /etc/
+	systemctl enable xl2tpd
 fi
