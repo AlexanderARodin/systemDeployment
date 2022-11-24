@@ -39,6 +39,7 @@ then
 	packsList="$packsList mc"
 fi
 
+echo packeges will be installed: $packList
 apt update
 apt install -y $packsList
 
