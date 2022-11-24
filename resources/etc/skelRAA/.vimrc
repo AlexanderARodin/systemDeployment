@@ -4,7 +4,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-set tabstop=4		"position for tubbing
+set tabstop=3		"position for tubbing
 set shiftwidth=4	"aply for >> and <<
 set t_Co=256		"terminal coloring
 
