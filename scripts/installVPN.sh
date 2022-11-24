@@ -6,6 +6,6 @@ deployerRoot=$(dirname $(dirname $0))
 
 if [ "$1" = "base" ]
 then
-	tst
+	apt -y install xl2tpd
 fi
 
