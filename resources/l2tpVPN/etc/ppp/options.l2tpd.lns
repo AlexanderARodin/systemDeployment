@@ -1,15 +1,17 @@
-noccp
-auth
-# crtscts
-mtu 1410
-mru 1410
-nodefaultroute
-# lock
-noproxyarp
-silent
-# modem
-asyncmap 0
-hide-password
-require-mschap-v2
 ms-dns 8.8.8.8
 ms-dns 8.8.4.4
+asyncmap 0
+auth
+crtscts
+lock
+hide-password
+modem
+#mtu 1410
+#mru 1410
+silent
+
+
+#noccp
+#nodefaultroute
+#noproxyarp
+#require-mschap-v2
