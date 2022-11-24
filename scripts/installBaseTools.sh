@@ -28,7 +28,7 @@ then
 fi
 if [ $installLevel -ge 1 ]
 then
-	packsList="$packsList zsh tmux tree"
+	packsList="$packsList iputils-ping zsh tmux tree"
 fi
 if [ $installLevel -ge 2 ]
 then
