@@ -3,7 +3,7 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.libForVPN.sh
 
-if [ "$1" != "libs" ]
+if [ "$1" != "tst" ]
 then
-	downLoadSwift
+	tst
 fi
