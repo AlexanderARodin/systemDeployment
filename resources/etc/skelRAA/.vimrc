@@ -20,3 +20,4 @@ set autoindent
 set foldcolumn=1
 
 set listchars=tab:▸·,eol:¬,precedes:«,extends:»
+set list
