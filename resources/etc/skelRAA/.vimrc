@@ -1,4 +1,4 @@
-"~/.vimrc               "file location
+"~/.vimrc				"file location
 set nocompatible		"with Vi
 filetype on
 filetype plugin on
