@@ -1,4 +1,4 @@
-"~/.vimrc
+"~/.vimrc               "file location
 set nocompatible		"with Vi
 filetype on
 filetype plugin on
@@ -8,14 +8,14 @@ set tabstop=3		"position for tubbing
 set shiftwidth=4	"aply for >> and <<
 set t_Co=256		"terminal coloring
 
-syntax on
+"syntax on          'incompatible with vi (vim.tiny)
 
-set number			"line numbering
-set numberwidth=4	"width for line numbering
+"set number			"line numbering
+set numberwidth=3	"width for line numbering
 
 set mouse=a			"mouse supporting
 
-set showtabline=3
+"set showtabline=3   "tabs on screen top
 set autoindent
 set foldcolumn=1
 
