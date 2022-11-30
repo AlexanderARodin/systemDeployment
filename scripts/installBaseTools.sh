@@ -32,11 +32,11 @@ then
 fi
 if [ $installLevel -ge 2 ]
 then
-	packsList="$packsList make vim"
+	packsList="$packsList make"
 fi
 if [ $installLevel -ge 3 ]
 then
-	packsList="$packsList mc"
+	packsList="$packsList vim mc"
 fi
 
 echo packeges will be installed: $packsList
