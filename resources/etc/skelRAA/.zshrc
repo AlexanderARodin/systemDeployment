@@ -1,20 +1,13 @@
-if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
-        if [[ $EUID == 0 ]]; then
-                PROMPT="%B%F{red}%~>%f%b"
-                RPROMPT="%F{red}%B%U%n@%m%u%b%f"
-        else
-                PROMPT="%B%F{cyan}%~>%f%b"
-                RPROMPT="%F{blue}%U%n@%m%u%f"
-        fi
-else
-        if [[ $EUID == 0 ]]; then
-                PROMPT="%B%F{red}%~>%f%b"
-                RPROMPT="%F{red}%B%n@%m%b%f"
-        else
-                PROMPT="%B%F{cyan}%~>%f%b"
-                RPROMPT="%F{green}%n@%m%f"
-        fi
-fi
+function getSymbA() {
+  echo -e "\xe2\x95\x93"
+}
+function getSymbA() {
+  echo -e "\n\xe2\x95\x93"
+}
+
+PROMPT='%(!.%B%F{red}.%F{green})$(getSymbA)%n@%m%~%(1/./.)$(getSymbB)%(!.#%f%b.>%f) '
+
+RPROMPT='%(?.%F{green}[ok].%F{red}[E:%?])%f%(1j.%F{yellow}[%j]%f.)'
 
 HISTFILE=~/.zhistory
 HISTSIZE=1000
