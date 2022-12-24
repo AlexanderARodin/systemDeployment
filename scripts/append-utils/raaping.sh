@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 
+HEADER="____"
+for ITEM in $@; do
+	HEADER="$HEADER\t$ITEM\t"
+done
+
+
 while true; do
-	for PREF in "*.." ".*." "..*" "...";do
-		HEADER="$PREF"
+	echo
+	echo -e $HEADER
+	for PREF in "#..." "##.." "###." "####" ".###" "..##" "...#";do
 		LINE="$PREF"
-		echo
 		for ITEM in $@; do
-			HEADER="$HEADER\t$ITEM\t"
 			LINE="$LINE\t$(ping -c 1 -t 1 $ITEM | grep icmp_ | cut -d ' ' -f 7)\t"
 		done
-		echo -e $HEADER
 		echo -e $LINE
 		sleep 1
 	done
