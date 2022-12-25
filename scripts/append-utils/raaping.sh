@@ -15,6 +15,6 @@ while true; do
 			LINE="$LINE\t$(ping -c 1 -t 1 $ITEM | grep icmp_ | cut -d ' ' -f 7)\t"
 		done
 		echo -e $LINE
-		sleep 1
 	done
+	sleep 1
 done
