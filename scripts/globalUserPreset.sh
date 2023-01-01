@@ -3,4 +3,4 @@
 deployerRoot=$(dirname $(dirname $0))
 . $deployerRoot/scripts/.lib.sh
 
-raaCopy /etc /etc
+sudo raaCopy /etc /etc
