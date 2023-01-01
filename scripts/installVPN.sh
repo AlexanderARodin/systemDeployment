@@ -7,12 +7,12 @@ deployerRoot=$(dirname $(dirname $0))
 
 if [ "$1" = "base" ]
 then
-	apt -y install xl2tpd
+	sudo apt -y install xl2tpd
 fi
 
 if [ "$1" = "full" ]
 then
-	apt -y install xl2tpd
-	raaCopy /l2tpVPN/etc/ /etc/
-	systemctl enable xl2tpd
+	sudo apt -y install xl2tpd
+	sudo raaCopy /l2tpVPN/etc/ /etc/
+	sudo systemctl enable xl2tpd
 fi
