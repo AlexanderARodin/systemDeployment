@@ -2,7 +2,7 @@
 notes and scripts for deployment and base configuration of new system
 
 # requirements
-	apt install git
+	apt install -y git make
 
 # recommendation
    adduser <someAdmin>
