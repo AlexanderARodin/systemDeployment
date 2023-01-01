@@ -40,5 +40,5 @@ then
 fi
 
 echo packeges will be installed: $packsList
-apt install -y $packsList
+sudo apt install -y $packsList
 
